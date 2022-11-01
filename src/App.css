@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+body{
+    height: 100%;
+    width:100%;
+    background: #E5E5E5;
+}
+.header-main{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    padding:10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-right{
+display:flex;
+justify-items: flex-end;
+color:#ffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-left{
+    display:flex;
+    flex-direction:row;
+    gap:5px;
+    justify-content: flex-start;
+    color:#ffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#header-logo{
+    width:40px;
+    height:40px;
+    margin-top:13px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-box{
+    height:20px;
+    width:250px;
+    margin: 70px 10px 30px 10px;
+    padding:10px;
+    border-radius:7px;
+    border: 3px solid #D5D4D8;
+    font-family: 'Karla', sans-serif;
+    font-weight:700;
+    font-size:16px;
+}
+
+.input-box:hover{
+    border:3px solid #A626D3;
+}
+
+
+.submit-button{
+    width:95%;
+    margin:0px 20px 30px 15px;
+    background:linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);;
+    border-radius:7px;
+    height:45px;
+    color:#ffff;
+    border : 0px;
+    font-family: 'Karla', sans-serif;
+    font-weight:700;
+    font-size:16px;
+    cursor:pointer;
 }
