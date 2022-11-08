@@ -1,6 +1,12 @@
 import React from 'react'
 
 function MemeForm(){
+    const [memeImage,setMemeImage] = React.useState('')
+    function getMemeImage(){
+        const memesArray = memesData.data.memes
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        setMemeImage(memesArray[randomNumber].url)
+    }
     return(
         <div>
             <div className="form-div">
@@ -12,7 +18,7 @@ function MemeForm(){
             </div>
             <div>
 
-                <img src="" />
+                <img src="{memeImage}" />
 
             </div>
         </div>
