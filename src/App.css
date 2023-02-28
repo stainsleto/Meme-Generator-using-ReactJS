@@ -1,74 +1,65 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+}
+
+main {
+    padding: 36px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 20px;
+}
+
+.header--image {
     height: 100%;
-    width:100%;
-    background: #E5E5E5;
-}
-.header-main{
-    display:flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: space-between;
-    background:linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
-    padding:10px;
+    margin-right: 6px;
 }
 
-.header-right{
-display:flex;
-justify-items: flex-end;
-color:#ffff;
+.header--title {
+    font-size: 1.25rem;
+    margin-right: auto;
 }
 
-.header-left{
-    display:flex;
-    flex-direction:row;
-    gap:5px;
-    justify-content: flex-start;
-    color:#ffff;
+.header--project {
+    font-size: 0.75rem;
+    font-weight: 500;
 }
 
-#header-logo{
-    width:40px;
-    height:40px;
-    margin-top:13px;
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+    margin-bottom: 17px;
 }
 
-.form-div{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.form--input {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
 }
 
-.input-box{
-    height:20px;
-    width:250px;
-    margin: 70px 10px 30px 10px;
-    padding:10px;
-    border-radius:7px;
-    border: 3px solid #D5D4D8;
-    font-family: 'Karla', sans-serif;
-    font-weight:700;
-    font-size:16px;
-}
-
-.input-box:hover{
-    border:3px solid #A626D3;
-}
-
-
-.submit-button{
-    width:95%;
-    margin:0px 20px 30px 15px;
-    background:linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);;
-    border-radius:7px;
-    height:45px;
-    color:#ffff;
-    border : 0px;
-    font-family: 'Karla', sans-serif;
-    font-weight:700;
-    font-size:16px;
-    cursor:pointer;
+.form--button {
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .meme--image {
     max-width: 100%;
+    border-radius: 3px;
 }

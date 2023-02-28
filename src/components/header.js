@@ -1,20 +1,15 @@
 import React from 'react';
-import '../App.css'
 import MemeLogo from '../images/meme-logo.png'
 
-export default function Header(){
-    return(
-    <div className="header-main">
-        <div className="header-left">
-            <img id="header-logo" src={MemeLogo} />
-            <h3>Meme Generator</h3>
-        </div>
-
-        <div className="header-right">
-            <h4>React Course - Project 3</h4>
-        </div>
-
-    </div>
-
+export default function Header() {
+    return (
+        <header className="header">
+            <img 
+                src={MemeLogo} 
+                className="header--image"
+            />
+            <h2 className="header--title">Meme Generator</h2>
+            <h4 className="header--project">React Course - Project 3</h4>
+        </header>
     )
 }
